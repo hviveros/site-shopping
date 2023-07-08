@@ -7,6 +7,15 @@
 
     <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-color: #f6f6f6;
+        }
+        body, ::placeholder{
+            font-weight: lighter;
+        }
+    </style>
 </head>
 <body>
     
@@ -34,31 +43,34 @@
     <!-- /top-menu -->
 
     <!-- header - logo -->
-    <div id="header" class="container">
+    <div id="header">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="https://placehold.co/300x50?text=brand" alt="Shopping">
-                </a>
+            <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a class="navbar-brand" href="#">
+                    <img src="https://placehold.co/300x50?text=brand" alt="Shopping">
+                </a>
+                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+                    <form role="search" class="ms-auto">
+                        <div class="input-group">
+                            <input type="text" aria-label="First name" class="form-control" placeholder="Categorías">
+                            <input type="text" aria-label="Last name" class="form-control" placeholder="Productos">
+                            <button class="btn btn-outline-secondary opacity-50" type="button">Buscar</button>
+                        </div>
+                    </form>
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Favoritos</a>
+                            <a class="nav-link" href="#">Favoritos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Mi orden</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Iniciar sesión</a>
+                            <a class="nav-link" href="#">Iniciar sesión</a>
                         </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit">Ir</button>
-                    </form>
+                    </ul>                    
                 </div>
             </div>
         </nav>
@@ -66,16 +78,17 @@
     <!-- /header - logo -->
     
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded"  data-bs-theme="dark" aria-label="Thirteenth navbar example">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" aria-label="navbarMain">
+        <div class="container">            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
-                <ul class="navbar-brand col-lg-3 me-0 list-unstyled">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Categorías</a>
+            <div class="collapse navbar-collapse align-items-center" id="navbarMain">
+                <!-- Categorías -->
+                <ul class="navbar-nav col-lg-3">
+                    <li class="nav-item dropdown btn btn-outline-primary">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">= Todas las categorías</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Informática</a></li>
                             <li><a class="dropdown-item" href="#">Games</a></li>
@@ -83,24 +96,25 @@
                         </ul>
                     </li>
                 </ul>
-                <ul class="navbar-nav col-lg-6 justify-content-lg-center">                    
+
+                <!-- menu-principal -->
+                <ul class="navbar-nav col-lg-6 justify-content-lg-center">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cómo llegar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Cómo comprar</a>
+                        <a class="nav-link" href="#">Cómo comprar</a>
                     </li>  
                     <li class="nav-item">
-                        <a class="nav-link">Delivery</a>
+                        <a class="nav-link" href="#">Delivery</a>
                     </li>  
                     <li class="nav-item">
-                        <a class="nav-link">La tienda</a>
+                        <a class="nav-link" href="#">La tienda</a>
                     </li>                   
                 </ul>
-                <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+
+                <!-- cta -->
+                <div class="d-flex col-lg-3 justify-content-lg-end">
                     <button class="btn btn-primary">Ofertas de la semana</button>
                 </div>
             </div>
@@ -111,13 +125,13 @@
     <!-- hero carousel -->
     <div id="hero">
         <div class="container">
-            <div class="row">
+            <div class="row py-4">
                 <div class="col-8">
-                    <div id="carouselExampleIndicators" class="carousel slide">
+                    <div id="carouselBannerMain" class="carousel slide">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselBannerMain" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselBannerMain" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselBannerMain" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -130,13 +144,13 @@
                             <img src="https://placehold.co/800x400?text=Tercer+Banner" class="d-block w-100" alt="...">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBannerMain" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
+                            <span class="visually-hidden">Anterior</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselBannerMain" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
+                            <span class="visually-hidden">Siguiente</span>
                         </button>
                     </div>
                 </div>
@@ -157,49 +171,49 @@
 
     <!-- info delivery -->
     <div id="info-delivery">
-        <div class="container p-4">
-            <div class="row row-cols-4">
-                <div class="col border">
-                    <div class="row align-items-center">
+        <div class="container">
+            <div class="row py-4 px-2 row-cols-4">
+                <div class="col border bg-light">
+                    <div class="row d-flex align-items-center py-2">
                         <div class="col-4">
-                            <img src="https://placehold.co/50x50?text=i" class="d-block w-100" alt="...">
+                            <img src="https://placehold.co/50x50?text=1" class="d-block w-100" alt="...">
                         </div>
-                        <div class="col-8 p-2">
-                            <h6>Primer paso</h6>
-                            <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                        <div class="col-8">
+                            <h6 class="pt-2">Envío gratis</h6>
+                            <p>Por compras a partir de $100,00</p>
                         </div>
                     </div>
                 </div>
-                <div class="col border">
-                    <div class="row align-items-center">
+                <div class="col border bg-light">
+                    <div class="row d-flex align-items-center py-2">
                         <div class="col-4">
                             <img src="https://placehold.co/50x50?text=2" class="d-block w-100" alt="...">
                         </div>
-                        <div class="col-8 p-2">
-                            <h6>Segundo paso</h6>
-                            <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                        <div class="col-8">
+                            <h6 class="pt-2">Devolución gratuita</h6>
+                            <p>Obtener devolución dentro de los 30 días</p>
                         </div>
                     </div>
                 </div>
-                <div class="col border">
-                    <div class="row align-items-center">
+                <div class="col border bg-light">
+                    <div class="row d-flex align-items-center py-2">
                         <div class="col-4">
                             <img src="https://placehold.co/50x50?text=3" class="d-block w-100" alt="...">
                         </div>
-                        <div class="col-8 p-2">
-                            <h6>Tercer paso</h6>
-                            <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                        <div class="col-8">
+                            <h6 class="pt-2">Pago seguro</h6>
+                            <p>100% Seguridad por pagos en línea</p>
                         </div>
                     </div>
                 </div>
-                <div class="col border">
-                    <div class="row align-items-center">
+                <div class="col border bg-light">
+                    <div class="row d-flex align-items-center py-2">
                         <div class="col-4">
                             <img src="https://placehold.co/50x50?text=4" class="d-block w-100" alt="...">
                         </div>
-                        <div class="col-8 p-2">
-                            <h6>Cuarto paso</h6>
-                            <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                        <div class="col-8">
+                            <h6 class="pt-2">La mejor calidad</h6>
+                            <p>Productos verificados y garantizados</p>
                         </div>
                     </div>
                 </div>
@@ -210,62 +224,73 @@
 
     <!-- row product 1  -->
     <div id="row-product-1">
-        <div class="container">
-            <h3>Todo gamer</h3>
+        <div class="container py-5">
+            <div class="row-header d-flex justify-content-between py-2">
+                <h3>Todo gamer</h3>
+                <a href="#">Ver todos ></a>
+            </div>
             <div class="row">
+                <!-- flyer  -->
                 <div class="col-3">
                     <img src="https://placehold.co/320x450?text=Flyer-1" class="img-fluid" alt="">
                 </div>
+                <!-- products -->
                 <div class="col-3">
-                    <div class="row justify-content-between align-items-center">
+                    <div class="row justify-content-between align-items-center bg-light h-100 g-0">
                         <div class="col-12 product-image">
-                            <img src="https://placehold.co/320x320?text=Product+image" class="img-fluid" alt="">
-                            <span class="badge rounded-pill bg-danger">
-                                -20% <span class="visually-hidden">unread messages</span>
-                            </span>
+                            <img src="https://www.madridcenter.com/phpthumb/phpThumb.php?src=/uploads/5ee82935ac7c4ba20d20a9a19186f896.jpg" class="img-fluid" alt="">                            
                         </div>
-                        <div class="col-12 product-info">
-                            <span class="product-valoration">*****</span>
-                            <p class="product-title">repellendus saepe numquam</p>
-                            <div class="product-price d-flex ">
-                                <span class="product-price-normal text-decoration-line-through">$ 1.000,00</span>
-                                <span class="product-price-offer">$ 800,00</span>
+                        <div class="col-12 product-info p-2">
+                            <div class="d-flex justify-content-between py-2">
+                                <span class="product-valoration"><span class="text-warning">***</span>**</span>
+                                <span class="badge rounded-pill bg-danger">
+                                    -20% <span class="visually-hidden">-20%</span>
+                                </span>
+                            </div>
+                            <p class="product-title fw-bold">Consola Nintendo Switch Oled Neon</p>
+                            <div class="product-price">
+                                <span class="product-price-normal text-decoration-line-through">$ 1.000,00 </span>
+                                <span class="product-price-offer text-danger fw-bold"> $ 800,00</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="row justify-content-between align-items-center">
+                    <div class="row justify-content-between align-items-center bg-light h-100 g-0">
                         <div class="col-12 product-image">
-                            <img src="https://placehold.co/320x320?text=Product+image" class="img-fluid" alt="">
-                            <span class="badge rounded-pill bg-danger">
-                                -20% <span class="visually-hidden">unread messages</span>
-                            </span>
+                            <img src="https://www.madridcenter.com/phpthumb/phpThumb.php?src=/uploads/7e0dbd6133568f1920323260e349250d.jpg" class="img-fluid" alt="">                            
                         </div>
-                        <div class="col-12 product-info">
-                            <span class="product-valoration">*****</span>
-                            <p class="product-title">repellendus saepe numquam</p>
-                            <div class="product-price d-flex ">
-                                <span class="product-price-normal text-decoration-line-through">$ 1.000,00</span>
-                                <span class="product-price-offer">$ 800,00</span>
+                        <div class="col-12 product-info p-2">
+                            <div class="d-flex justify-content-between py-2">
+                                <span class="product-valoration"><span class="text-warning">***</span>**</span>
+                                <span class="badge rounded-pill bg-danger">
+                                    -20% <span class="visually-hidden">-20%</span>
+                                </span>
+                            </div>
+                            <p class="product-title fw-bold">Mouse gaming con sensor óptico Quanta Lite</p>
+                            <div class="product-price">
+                                <span class="product-price-normal text-decoration-line-through">$ 1.000,00 </span>
+                                <span class="product-price-offer text-danger fw-bold"> $ 800,00</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="row justify-content-between align-items-center">
+                    <div class="row justify-content-between align-items-center bg-light h-100 g-0">
                         <div class="col-12 product-image">
-                            <img src="https://placehold.co/320x320?text=Product+image" class="img-fluid" alt="">
-                            <span class="badge rounded-pill bg-danger">
-                                -20% <span class="visually-hidden">unread messages</span>
-                            </span>
+                            <img src="https://www.madridcenter.com/phpthumb/phpThumb.php?src=/uploads/44114210356af1a84616e6b2a075db2f.jpg" class="img-fluid" alt="">                            
                         </div>
-                        <div class="col-12 product-info">
-                            <span class="product-valoration">*****</span>
-                            <p class="product-title">repellendus saepe numquam</p>
-                            <div class="product-price d-flex ">
-                                <span class="product-price-normal text-decoration-line-through">$ 1.000,00</span>
-                                <span class="product-price-offer">$ 800,00</span>
+                        <div class="col-12 product-info p-2">
+                            <div class="d-flex justify-content-between py-2">
+                                <span class="product-valoration"><span class="text-warning">***</span>**</span>
+                                <span class="badge rounded-pill bg-danger">
+                                    -20% <span class="visually-hidden">-20%</span>
+                                </span>
+                            </div>
+                            <p class="product-title fw-bold">Silla gaming ergonómica Razer HZ</p>
+                            <div class="product-price">
+                                <span class="product-price-normal text-decoration-line-through">$ 1.000,00 </span>
+                                <span class="product-price-offer text-danger fw-bold"> $ 800,00</span>
                             </div>
                         </div>
                     </div>
