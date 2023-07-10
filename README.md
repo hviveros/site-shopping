@@ -14,4 +14,4 @@
 
 _A continuación captura de pantalla para vista preliminar_
 
-![](./img/Screenshot-1.png)
+![](./img/Screenshot.png)
