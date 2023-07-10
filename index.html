@@ -58,12 +58,22 @@
 
     <!-- header - logo -->
     <div id="header">
+        <div id="aviso">
+            <div class="container">
+                <div class="row pt-3">
+                    <div class="col-12 col-lg-6 offset-lg-3 alert alert-info alert-dismissible fade show rounded-pill border-primary p-2" role="alert">
+                        <i class="fas fa-info-circle fa-lg text-primary"></i> Sitio temporal, únicamente para muestra
+                        <button type="button" class="btn-close pt-1" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="#">
+                </button> -->
+                <a class="navbar-brand mx-auto" href="#">
                     <img src="./img/roma-logo.png" alt="Roma Shopping">
                 </a>
                 <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
@@ -74,17 +84,19 @@
                             <button class="btn btn-outline-secondary opacity-50" type="button">Buscar <i class="fas fa-search"></i></button>
                         </div>
                     </form>
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-bookmark"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
-                        </li>
-                    </ul>                    
+                    <div class="d-none d-sm-block ms-auto">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-bookmark"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+                            </li>
+                        </ul> 
+                    </div>                   
                 </div>
             </div>
         </nav>
@@ -95,7 +107,8 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary nav-main" data-bs-theme="dark" aria-label="navbarMain">
         <div class="container">            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                Todas las categorías
             </button>
 
             <div class="collapse navbar-collapse align-items-center" id="navbarMain">
@@ -140,7 +153,7 @@
     <div id="hero">
         <div class="container">
             <div class="row py-4">
-                <div class="col-8">
+                <div class="col-12 col-md-8">
                     <div id="carouselBannerMain" class="carousel slide">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselBannerMain" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -168,12 +181,12 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="row">
-                        <div class="col-12 pb-2">
+                        <div class="col-6 col-md-12 pb-2">
                             <img src="./img/flyer-1.jpg" class="d-block w-100" alt="...">
                         </div>
-                        <div class="col-12">
+                        <div class="col-6 col-md-12">
                             <img src="./img/flyer-2.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
@@ -186,7 +199,7 @@
     <!-- info delivery -->
     <div id="info-delivery">
         <div class="container">
-            <div class="row py-4 px-2 row-cols-4">
+            <div class="row py-4 px-2 row-cols-1 row-cols-sm-2 row-cols-lg-4">
                 <div class="col border bg-light">
                     <div class="row d-flex align-items-center py-2">
                         <div class="col-4 fs-2 text-center">
@@ -245,11 +258,11 @@
             </div>
             <div class="row">
                 <!-- flyer  -->
-                <div class="col-3">
+                <div class="d-none d-md-block col-12 col-sm-6 col-md-4 col-lg-3">
                     <img src="./img/flyer-3.jpg" class="img-fluid" alt="">
                 </div>
                 <!-- products -->
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="row d-flex justify-content-between align-items-center bg-white h-100 g-0 shadow-sm">
                         <div class="col-12 product-image">
                             <img src="https://www.romapy.com/7991-large_default/juego-xbox-one-battlefield-1-.jpg" class="img-fluid" alt="">                            
@@ -277,7 +290,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="row d-flex justify-content-between align-items-center bg-white h-100 g-0 shadow-sm">
                         <div class="col-12 product-image">
                             <img src="https://www.romapy.com/48368-large_default/mouse-gamer-usb-hyperx-pulsefire-raid-16000-dpi-iluminacion-rgb-negro-hx-mc005b.jpg" class="img-fluid" alt="">                            
@@ -305,7 +318,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="d-none d-lg-block col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="row d-flex justify-content-between align-items-center bg-white h-100 g-0 shadow-sm">
                         <div class="col-12 product-image">
                             <img src="https://www.romapy.com/54838-large_default/silla-gamer-razer-enki-x-essential-negro-rz38-03880100-r3u1.jpg" class="img-fluid" alt="">                            
@@ -342,7 +355,7 @@
     <div id="brands">
         <div class="container py-5">
             <h3><span class="text-primary">Principales</span> marcas</h3>
-            <div class="row row-cols-6 text-center">
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 text-center">
                 <div class="col bg-white border"><img src="https://www.romapy.com/img/m/77-manufacturers_default.jpg" alt=""></div>
                 <div class="col bg-white border"><img src="https://www.romapy.com/img/m/72-manufacturers_default.jpg" alt=""></div>
                 <div class="col bg-white border"><img src="https://www.romapy.com/img/m/82-manufacturers_default.jpg" alt=""></div>
@@ -363,11 +376,11 @@
     <!-- banner 1 -->
     <div id="banner-1">
         <div class="container py-5 g-0">
-            <div class="row row-cols-2 text-center g-0">
-                <div class="col-6">
+            <div class="row text-center g-0">
+                <div class="col-12 col-md-6 pb-2">
                     <img src="./img/flyer-4.jpg" class="img-fluid" alt="">
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6 pb-2">
                     <img src="./img/flyer-5.jpg" class="img-fluid" alt="">
                 </div>
             </div>
@@ -383,7 +396,7 @@
                 <a href="#" class="link-underline">Ver todos <i class="fas fa-chevron-right"></i></a>
             </div>
             <div class="row">
-                <div class="col-6 mb-3">
+                <div class="col-12 col-md-6 mb-3">
                     <div class="row d-flex justify-content-between align-items-center bg-white h-100 g-0">
                         <div class="col-4 product-image p-4">
                             <img src="https://www.romapy.com/49796-large_default/smart-tv-vizzion-le50uhd20-50-uhd-4k-netflix-wi-fi-le50uhd20-50diu-fidsb.jpg" class="img-fluid" alt="">
@@ -412,7 +425,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 mb-3">
+                <div class="col-12 col-md-6 mb-3">
                     <div class="row d-flex justify-content-between align-items-center bg-white h-100 g-0">
                         <div class="col-4 product-image p-4">
                             <img src="https://www.romapy.com/6171-large_default/tv-smart-led-sony-49-ultra-hd-4k-wi-fi-kd-49725e.jpg" class="img-fluid" alt="">
@@ -441,7 +454,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 mb-3">
+                <div class="col-12 col-md-6 mb-3">
                     <div class="row d-flex justify-content-between align-items-center bg-white h-100 g-0">
                         <div class="col-4 product-image p-4">
                             <img src="https://www.romapy.com/52140-large_default/satellite-conversor-digital-a-dtr07-fhd-1080p-preto---a-dtr07.jpg" class="img-fluid" alt="">
@@ -470,7 +483,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 mb-3">
+                <div class="col-12 col-md-6 mb-3">
                     <div class="row d-flex justify-content-between align-items-center bg-white h-100 g-0">
                         <div class="col-4 product-image p-4">
                             <img src="https://www.romapy.com/57630-large_default/receptor-htv-h8-4k-ultra-hd-16gb-2gb-wi-fihdmiusb-bivolt-negro.jpg" class="img-fluid" alt="">
@@ -508,10 +521,10 @@
     <div id="banner-2">
         <div class="container py-5 g-0">
             <div class="row row-cols-2 text-center g-0">
-                <div class="col-6">
+                <div class="col-12 col-md-6 pb-2">
                     <img src="img/flyer-6.jpg" class="img-fluid" alt="">
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6 pb-2">
                     <img src="img/flyer-7.jpg" class="img-fluid" alt="">
                 </div>
             </div>
@@ -528,11 +541,11 @@
             </div>
             <div class="row">
                 <!-- flyer  -->
-                <div class="col-3">
+                <div class="d-none d-md-block col-12 col-sm-6 col-md-4 col-lg-3">
                     <img src="./img/flyer-8.jpg" class="img-fluid" alt="">
                 </div>
                 <!-- products -->
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="row d-flex justify-content-between align-items-center bg-white h-100 g-0 shadow-sm">
                         <div class="col-12 product-image">
                             <img src="https://www.romapy.com/59546-large_default/smartphone-xiaomi-redmi-note-12-dual-sim-8gb128gb-667-os-12-onyx-gray-eu-46818.jpg" class="img-fluid" alt="">                            
@@ -560,7 +573,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="row d-flex justify-content-between align-items-center bg-white h-100 g-0 shadow-sm">
                         <div class="col-12 product-image">
                             <img src="https://www.romapy.com/58369-large_default/smartphone-xiaomi-poco-x5-5g-dual-sim-6gb128gb-667-os-12-verde-45008.jpg" class="img-fluid" alt="">                            
@@ -588,7 +601,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="d-none d-lg-block col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="row d-flex justify-content-between align-items-center bg-white h-100 g-0 shadow-sm">
                         <div class="col-12 product-image">
                             <img src="https://www.romapy.com/54652-large_default/smartphone-realme-c21-y-rmx3263-dual-sim-4gb64gb-65-os-10-cross-blue-.jpg" class="img-fluid" alt="">                            
@@ -641,7 +654,7 @@
                 <a href="#" class="link-underline">Ver todos <i class="fas fa-chevron-right"></i></a>
             </div>
             <div class="row">
-                <div class="col-4 mb-1">
+                <div class="col-12 col-md-6 col-lg-4 mb-1">
                     <div class="row d-flex justify-content-between align-items-center bg-white h-100 g-0">
                         <div class="col-3 product-image">
                             <img src="https://www.romapy.com/59546-large_default/smartphone-xiaomi-redmi-note-12-dual-sim-8gb128gb-667-os-12-onyx-gray-eu-46818.jpg" class="img-fluid" alt="">
@@ -669,7 +682,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 mb-1">
+                <div class="col-12 col-md-6 col-lg-4 mb-1">
                     <div class="row d-flex justify-content-between align-items-center bg-white h-100 g-0">
                         <div class="col-3 product-image">
                             <img src="https://www.romapy.com/58369-large_default/smartphone-xiaomi-poco-x5-5g-dual-sim-6gb128gb-667-os-12-verde-45008.jpg" class="img-fluid" alt="">
@@ -697,7 +710,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 mb-1">
+                <div class="col-12 col-md-6 col-lg-4 mb-1">
                     <div class="row d-flex justify-content-between align-items-center bg-white h-100 g-0">
                         <div class="col-3 product-image">
                             <img src="https://www.romapy.com/49796-large_default/smart-tv-vizzion-le50uhd20-50-uhd-4k-netflix-wi-fi-le50uhd20-50diu-fidsb.jpg" class="img-fluid" alt="">
@@ -725,7 +738,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 mb-1">
+                <div class="col-12 col-md-6 col-lg-4 mb-1">
                     <div class="row d-flex justify-content-between align-items-center bg-white h-100 g-0">
                         <div class="col-3 product-image">
                             <img src="https://www.romapy.com/6171-large_default/tv-smart-led-sony-49-ultra-hd-4k-wi-fi-kd-49725e.jpg" class="img-fluid" alt="">
@@ -753,7 +766,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 mb-1">
+                <div class="col-12 col-md-6 col-lg-4 mb-1">
                     <div class="row d-flex justify-content-between align-items-center bg-white h-100 g-0">
                         <div class="col-3 product-image">
                             <img src="https://www.romapy.com/48368-large_default/mouse-gamer-usb-hyperx-pulsefire-raid-16000-dpi-iluminacion-rgb-negro-hx-mc005b.jpg" class="img-fluid" alt="">
@@ -781,7 +794,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 mb-1">
+                <div class="col-12 col-md-6 col-lg-4 mb-1">
                     <div class="row d-flex justify-content-between align-items-center bg-white h-100 g-0">
                         <div class="col-3 product-image">
                             <img src="https://www.romapy.com/54838-large_default/silla-gamer-razer-enki-x-essential-negro-rz38-03880100-r3u1.jpg" class="img-fluid" alt="">
@@ -821,8 +834,8 @@
                 <h3>Suscríbete al newsletter</h3>
                 <p class="col-lg-8 mx-auto lead">Recibe ofertas y novedades en tu correo electrónico</p>
                 <div class="row">
-                    <div class="col-6 offset-3">
-                        <form>
+                    <div class="col-12 col-lg-6 offset-lg-3">
+                        <form">
                             <div class="input-group input-group-lg mb-3">
                                 <input type="text" class="form-control" placeholder="Tu correo@email.com" aria-label="correo@email.com" aria-describedby="button-addon2">
                                 <button class="btn btn-primary" type="button" id="button-addon2">Enviar <i class="fas fa-paper-plane"></i></button>
