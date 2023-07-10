@@ -16,6 +16,10 @@
             font-weight: lighter;
         }
     </style>
+
+    <!-- FA icons -->
+    <script src="https://kit.fontawesome.com/573783946a.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     
@@ -57,18 +61,18 @@
                         <div class="input-group">
                             <input type="text" aria-label="First name" class="form-control" placeholder="Categorías">
                             <input type="text" aria-label="Last name" class="form-control" placeholder="Productos">
-                            <button class="btn btn-outline-secondary opacity-50" type="button">Buscar</button>
+                            <button class="btn btn-outline-secondary opacity-50" type="button">Buscar <i class="fas fa-search"></i></button>
                         </div>
                     </form>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Favoritos</a>
+                            <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Mi orden</a>
+                            <a class="nav-link" href="#"><i class="fas fa-bookmark"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Iniciar sesión</a>
+                            <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
                         </li>
                     </ul>                    
                 </div>
@@ -88,7 +92,7 @@
                 <!-- Categorías -->
                 <ul class="navbar-nav col-lg-3">
                     <li class="nav-item dropdown btn btn-outline-primary">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">= Todas las categorías</a>
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-bars"></i> Todas las categorías</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Informática</a></li>
                             <li><a class="dropdown-item" href="#">Games</a></li>
@@ -100,22 +104,22 @@
                 <!-- menu-principal -->
                 <ul class="navbar-nav col-lg-6 justify-content-lg-center">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#"><i class="fas fa-home"></i> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cómo comprar</a>
+                        <a class="nav-link" href="#"><i class="fas fa-question-circle"></i> Cómo comprar</a>
                     </li>  
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Delivery</a>
+                        <a class="nav-link" href="#"><i class="fas fa-truck"></i> Delivery</a>
                     </li>  
                     <li class="nav-item">
-                        <a class="nav-link" href="#">La tienda</a>
+                        <a class="nav-link" href="#"><i class="fas fa-store"></i> La tienda</a>
                     </li>                   
                 </ul>
 
                 <!-- cta -->
                 <div class="d-flex col-lg-3 justify-content-lg-end">
-                    <button class="btn btn-primary">Ofertas de la semana</button>
+                    <button class="btn btn-outline-primary"><i class="fas fa-star"></i> Ofertas</button>
                 </div>
             </div>
         </div>
@@ -175,8 +179,8 @@
             <div class="row py-4 px-2 row-cols-4">
                 <div class="col border bg-light">
                     <div class="row d-flex align-items-center py-2">
-                        <div class="col-4">
-                            <img src="https://placehold.co/50x50?text=1" class="d-block w-100" alt="...">
+                        <div class="col-4 fs-2 text-center">
+                            <i class="fas fa-dolly-flatbed fa-lg"></i>
                         </div>
                         <div class="col-8">
                             <h6 class="pt-2">Envío gratis</h6>
@@ -186,8 +190,8 @@
                 </div>
                 <div class="col border bg-light">
                     <div class="row d-flex align-items-center py-2">
-                        <div class="col-4">
-                            <img src="https://placehold.co/50x50?text=2" class="d-block w-100" alt="...">
+                        <div class="col-4 fs-2 text-center">
+                            <i class="fas fa-undo fa-lg"></i>
                         </div>
                         <div class="col-8">
                             <h6 class="pt-2">Devolución gratuita</h6>
@@ -197,8 +201,8 @@
                 </div>
                 <div class="col border bg-light">
                     <div class="row d-flex align-items-center py-2">
-                        <div class="col-4">
-                            <img src="https://placehold.co/50x50?text=3" class="d-block w-100" alt="...">
+                        <div class="col-4 fs-2 text-center">
+                            <i class="fas fa-lock fa-lg"></i>
                         </div>
                         <div class="col-8">
                             <h6 class="pt-2">Pago seguro</h6>
@@ -208,8 +212,8 @@
                 </div>
                 <div class="col border bg-light">
                     <div class="row d-flex align-items-center py-2">
-                        <div class="col-4">
-                            <img src="https://placehold.co/50x50?text=4" class="d-block w-100" alt="...">
+                        <div class="col-4 fs-2 text-center">
+                            <i class="fas fa-check-circle fa-lg"></i>
                         </div>
                         <div class="col-8">
                             <h6 class="pt-2">La mejor calidad</h6>
@@ -227,7 +231,7 @@
         <div class="container py-5">
             <div class="row-header d-flex justify-content-between py-2">
                 <h3>Todo gamer</h3>
-                <a href="#">Ver todos ></a>
+                <a href="#" class="link-underline">Ver todos <i class="fas fa-chevron-right"></i></a>
             </div>
             <div class="row">
                 <!-- flyer  -->
@@ -242,15 +246,23 @@
                         </div>
                         <div class="col-12 product-info p-2">
                             <div class="d-flex justify-content-between py-2">
-                                <span class="product-valoration"><span class="text-warning">***</span>**</span>
-                                <span class="badge rounded-pill bg-danger">
-                                    -20% <span class="visually-hidden">-20%</span>
+                                <span class="product-valoration small">
+                                    <small>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                    </small>
+                                </span>
+                                <span class="badge rounded-pill bg-warning">
+                                    <small>-20% <span class="visually-hidden">-20%</span></small>
                                 </span>
                             </div>
                             <p class="product-title fw-bold">Consola Nintendo Switch Oled Neon</p>
                             <div class="product-price">
-                                <span class="product-price-normal text-decoration-line-through">$ 1.000,00 </span>
-                                <span class="product-price-offer text-danger fw-bold"> $ 800,00</span>
+                                <span class="product-price-normal text-decoration-line-through px-2">$ 1.000,00 </span>
+                                <span class="product-price-offer text-primary fw-bold">$ 800,00</span>
                             </div>
                         </div>
                     </div>
@@ -262,15 +274,23 @@
                         </div>
                         <div class="col-12 product-info p-2">
                             <div class="d-flex justify-content-between py-2">
-                                <span class="product-valoration"><span class="text-warning">***</span>**</span>
-                                <span class="badge rounded-pill bg-danger">
-                                    -20% <span class="visually-hidden">-20%</span>
+                                <span class="product-valoration small">
+                                    <small>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                    </small>
+                                </span>
+                                <span class="badge rounded-pill bg-warning">
+                                    <small>-20% <span class="visually-hidden">-20%</span></small>
                                 </span>
                             </div>
                             <p class="product-title fw-bold">Mouse gaming con sensor óptico Quanta Lite</p>
                             <div class="product-price">
                                 <span class="product-price-normal text-decoration-line-through">$ 1.000,00 </span>
-                                <span class="product-price-offer text-danger fw-bold"> $ 800,00</span>
+                                <span class="product-price-offer text-primary fw-bold"> $ 800,00</span>
                             </div>
                         </div>
                     </div>
@@ -282,15 +302,23 @@
                         </div>
                         <div class="col-12 product-info p-2">
                             <div class="d-flex justify-content-between py-2">
-                                <span class="product-valoration"><span class="text-warning">***</span>**</span>
-                                <span class="badge rounded-pill bg-danger">
-                                    -20% <span class="visually-hidden">-20%</span>
+                                <span class="product-valoration small">
+                                    <small>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                    </small>
+                                </span>
+                                <span class="badge rounded-pill bg-warning">
+                                    <small>-20% <span class="visually-hidden">-20%</span></small>
                                 </span>
                             </div>
                             <p class="product-title fw-bold">Silla gaming ergonómica Razer HZ</p>
                             <div class="product-price">
                                 <span class="product-price-normal text-decoration-line-through">$ 1.000,00 </span>
-                                <span class="product-price-offer text-danger fw-bold"> $ 800,00</span>
+                                <span class="product-price-offer text-primary fw-bold"> $ 800,00</span>
                             </div>
                         </div>
                     </div>
@@ -342,7 +370,7 @@
         <div class="container py-5">
             <div class="row-header d-flex justify-content-between py-2">
                 <h3>Los más vendidos</h3>
-                <a href="#">Ver todos ></a>
+                <a href="#" class="link-underline">Ver todos <i class="fas fa-chevron-right"></i></a>
             </div>
             <div class="row">
                 <div class="col-6 mb-3">
@@ -352,14 +380,25 @@
                         </div>
                         <div class="col-8 product-info p-4">
                             <div class="d-flex justify-content-between py-2">
-                                <span class="product-valoration"><span class="text-warning">****</span>*</span>
+                                <span class="product-valoration small">
+                                    <small>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                    </small>
+                                </span>
+                                <span class="badge rounded-pill bg-warning">
+                                    <small>-20% <span class="visually-hidden">-20%</span></small>
+                                </span>
                             </div>
                             <p class="product-title fw-bold">TV Led Coby CY3359-40SMS - Full HD - Smart TV 40"</p>
                             <div class="product-price">
                                 <span class="product-price-normal text-decoration-line-through px-2">$ 900,00 </span>
                                 <span class="product-price-normal text-primary fw-bold">$ 800,00 </span>
                             </div>
-                            <button type="button" class="btn btn-outline-primary">Agregar al carrito</button>
+                            <button type="button" class="btn btn-outline-primary"><i class="fas fa-shopping-cart"></i> Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -370,14 +409,25 @@
                         </div>
                         <div class="col-8 product-info p-4">
                             <div class="d-flex justify-content-between py-2">
-                                <span class="product-valoration"><span class="text-warning">****</span>*</span>
+                                <span class="product-valoration small">
+                                    <small>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                    </small>
+                                </span>
+                                <span class="badge rounded-pill bg-warning">
+                                    <small>-20% <span class="visually-hidden">-20%</span></small>
+                                </span>
                             </div>
                             <p class="product-title fw-bold">Mouse gaming con sensor óptico Quanta Lite</p>
                             <div class="product-price">
                                 <span class="product-price-normal text-decoration-line-through px-2">$ 900,00 </span>
                                 <span class="product-price-normal text-primary fw-bold">$ 800,00 </span>
                             </div>
-                            <button type="button" class="btn btn-outline-primary">Agregar al carrito</button>
+                            <button type="button" class="btn btn-outline-primary"><i class="fas fa-shopping-cart"></i> Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -388,14 +438,25 @@
                         </div>
                         <div class="col-8 product-info p-4">
                             <div class="d-flex justify-content-between py-2">
-                                <span class="product-valoration"><span class="text-warning">****</span>*</span>
+                                <span class="product-valoration small">
+                                    <small>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                    </small>
+                                </span>
+                                <span class="badge rounded-pill bg-warning">
+                                    <small>-20% <span class="visually-hidden">-20%</span></small>
+                                </span>
                             </div>
                             <p class="product-title fw-bold">Silla gaming ergonómica Razer HZ</p>
                             <div class="product-price">
                                 <span class="product-price-normal text-decoration-line-through px-2">$ 670,00 </span>
                                 <span class="product-price-normal text-primary fw-bold">$ 600,00 </span>
                             </div>
-                            <button type="button" class="btn btn-outline-primary">Agregar al carrito</button>
+                            <button type="button" class="btn btn-outline-primary"><i class="fas fa-shopping-cart"></i> Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -406,14 +467,25 @@
                         </div>
                         <div class="col-8 product-info p-4">
                             <div class="d-flex justify-content-between py-2">
-                                <span class="product-valoration"><span class="text-warning">****</span>*</span>
+                                <span class="product-valoration small">
+                                    <small>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                    </small>
+                                </span>
+                                <span class="badge rounded-pill bg-warning">
+                                    <small>-20% <span class="visually-hidden">-20%</span></small>
+                                </span>
                             </div>
                             <p class="product-title fw-bold">Consola Nintendo Switch Oled Neon</p>
                             <div class="product-price">
                                 <span class="product-price-normal text-decoration-line-through px-2">$ 650,00 </span>
                                 <span class="product-price-normal text-primary fw-bold">$ 630,00 </span>
                             </div>
-                            <button type="button" class="btn btn-outline-primary">Agregar al carrito</button>
+                            <button type="button" class="btn btn-outline-primary"><i class="fas fa-shopping-cart"></i> Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -442,7 +514,7 @@
         <div class="container py-5">
             <div class="row-header d-flex justify-content-between py-2">
                 <h3>De temporada</h3>
-                <a href="#">Ver todos ></a>
+                <a href="#" class="link-underline">Ver todos <i class="fas fa-chevron-right"></i></a>
             </div>
             <div class="row">
                 <!-- flyer  -->
@@ -457,7 +529,15 @@
                         </div>
                         <div class="col-12 product-info p-2">
                             <div class="d-flex justify-content-between py-2">
-                                <span class="product-valoration"><span class="text-warning">***</span>**</span>
+                                <span class="product-valoration small">
+                                    <small>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                    </small>
+                                </span>
                                 <span class="badge rounded-pill bg-danger">
                                     -20% <span class="visually-hidden">-20%</span>
                                 </span>
@@ -465,7 +545,7 @@
                             <p class="product-title fw-bold">Consola Nintendo Switch Oled Neon</p>
                             <div class="product-price">
                                 <span class="product-price-normal text-decoration-line-through">$ 1.000,00 </span>
-                                <span class="product-price-offer text-danger fw-bold"> $ 800,00</span>
+                                <span class="product-price-offer text-primary fw-bold"> $ 800,00</span>
                             </div>
                         </div>
                     </div>
@@ -477,7 +557,15 @@
                         </div>
                         <div class="col-12 product-info p-2">
                             <div class="d-flex justify-content-between py-2">
-                                <span class="product-valoration"><span class="text-warning">***</span>**</span>
+                                <span class="product-valoration small">
+                                    <small>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                    </small>
+                                </span>
                                 <span class="badge rounded-pill bg-danger">
                                     -20% <span class="visually-hidden">-20%</span>
                                 </span>
@@ -485,7 +573,7 @@
                             <p class="product-title fw-bold">Mouse gaming con sensor óptico Quanta Lite</p>
                             <div class="product-price">
                                 <span class="product-price-normal text-decoration-line-through">$ 1.000,00 </span>
-                                <span class="product-price-offer text-danger fw-bold"> $ 800,00</span>
+                                <span class="product-price-offer text-primary fw-bold"> $ 800,00</span>
                             </div>
                         </div>
                     </div>
@@ -497,7 +585,15 @@
                         </div>
                         <div class="col-12 product-info p-2">
                             <div class="d-flex justify-content-between py-2">
-                                <span class="product-valoration"><span class="text-warning">***</span>**</span>
+                                <span class="product-valoration small">
+                                    <small>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                            <i class="fas fa-star text-secondary"></i>
+                                    </small>
+                                </span>
                                 <span class="badge rounded-pill bg-danger">
                                     -20% <span class="visually-hidden">-20%</span>
                                 </span>
@@ -505,7 +601,7 @@
                             <p class="product-title fw-bold">Silla gaming ergonómica Razer HZ</p>
                             <div class="product-price">
                                 <span class="product-price-normal text-decoration-line-through">$ 1.000,00 </span>
-                                <span class="product-price-offer text-danger fw-bold"> $ 800,00</span>
+                                <span class="product-price-offer text-primary fw-bold"> $ 800,00</span>
                             </div>
                         </div>
                     </div>
@@ -532,7 +628,7 @@
         <div class="container py-5">
             <div class="row-header d-flex justify-content-between py-2">
                 <h3>En liquidación</h3>
-                <a href="#">Ver todos ></a>
+                <a href="#" class="link-underline">Ver todos <i class="fas fa-chevron-right"></i></a>
             </div>
             <div class="row">
                 <div class="col-4 mb-1">
@@ -540,16 +636,26 @@
                         <div class="col-3 product-image">
                             <img src="https://placehold.co/100x100?text=Product+image" class="img-fluid" alt="">
                         </div>
-                        <div class="col-9 product-info">
-                            <span class="badge rounded-pill bg-danger">
-                                -50% <span class="visually-hidden">unread messages</span>
-                            </span>
-                            <span class="product-valoration"><span class="text-warning">****</span>*</span>
-                            <p class="product-title fw-bold my-0"><a href="#" class="link nav-link"><small>TV Led Coby CY3359-40SMS - Full HD - Smart TV 40"</small></a></p>
-                            <div class="product-price">
-                                <span class="product-price-normal text-decoration-line-through px-2">$ 1.000,00</span>
-                                <span class="product-price-offer text-primary fw-bold">$ 500,00</span>
-                            </div>
+                        <div class="col-9 product-info px-2">
+                            <small>
+                                <span class="badge rounded-pill bg-danger">
+                                    -50% <span class="visually-hidden">unread messages</span>
+                                </span>
+                                <span class="product-valoration small">
+                                        <small>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-secondary"></i>
+                                                <i class="fas fa-star text-secondary"></i>
+                                        </small>
+                                    </span>
+                                <p class="product-title fw-bold my-0"><a href="#" class="link nav-link"><small>TV Led Coby CY3359-40SMS - Full HD - Smart TV 40"</small></a></p>
+                                <div class="product-price">
+                                    <span class="product-price-normal text-decoration-line-through px-2">$ 1.000,00</span>
+                                    <span class="product-price-offer text-primary fw-bold">$ 500,00</span>
+                                </div>
+                            </small>
                         </div>
                     </div>
                 </div>
@@ -558,16 +664,26 @@
                         <div class="col-3 product-image">
                             <img src="https://placehold.co/100x100?text=Product+image" class="img-fluid" alt="">
                         </div>
-                        <div class="col-9 product-info">
-                            <span class="badge rounded-pill bg-danger">
-                                -50% <span class="visually-hidden">unread messages</span>
-                            </span>
-                            <span class="product-valoration"><span class="text-warning">****</span>*</span>
-                            <p class="product-title fw-bold my-0"><a href="#" class="link nav-link"><small>TV Led Coby CY3359-40SMS - Full HD - Smart TV 40"</small></a></p>
-                            <div class="product-price">
-                                <span class="product-price-normal text-decoration-line-through px-2">$ 1.000,00</span>
-                                <span class="product-price-offer text-primary fw-bold">$ 500,00</span>
-                            </div>
+                        <div class="col-9 product-info px-2">
+                            <small>
+                                <span class="badge rounded-pill bg-danger">
+                                    -50% <span class="visually-hidden">unread messages</span>
+                                </span>
+                                <span class="product-valoration small">
+                                        <small>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-secondary"></i>
+                                                <i class="fas fa-star text-secondary"></i>
+                                        </small>
+                                    </span>
+                                <p class="product-title fw-bold my-0"><a href="#" class="link nav-link"><small>TV Led Coby CY3359-40SMS - Full HD - Smart TV 40"</small></a></p>
+                                <div class="product-price">
+                                    <span class="product-price-normal text-decoration-line-through px-2">$ 1.000,00</span>
+                                    <span class="product-price-offer text-primary fw-bold">$ 500,00</span>
+                                </div>
+                            </small>
                         </div>
                     </div>
                 </div>
@@ -576,16 +692,26 @@
                         <div class="col-3 product-image">
                             <img src="https://placehold.co/100x100?text=Product+image" class="img-fluid" alt="">
                         </div>
-                        <div class="col-9 product-info">
-                            <span class="badge rounded-pill bg-danger">
-                                -50% <span class="visually-hidden">unread messages</span>
-                            </span>
-                            <span class="product-valoration"><span class="text-warning">****</span>*</span>
-                            <p class="product-title fw-bold my-0"><a href="#" class="link nav-link"><small>TV Led Coby CY3359-40SMS - Full HD - Smart TV 40"</small></a></p>
-                            <div class="product-price">
-                                <span class="product-price-normal text-decoration-line-through px-2">$ 1.000,00</span>
-                                <span class="product-price-offer text-primary fw-bold">$ 500,00</span>
-                            </div>
+                        <div class="col-9 product-info px-2">
+                            <small>
+                                <span class="badge rounded-pill bg-danger">
+                                    -50% <span class="visually-hidden">unread messages</span>
+                                </span>
+                                <span class="product-valoration small">
+                                        <small>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-secondary"></i>
+                                                <i class="fas fa-star text-secondary"></i>
+                                        </small>
+                                    </span>
+                                <p class="product-title fw-bold my-0"><a href="#" class="link nav-link"><small>TV Led Coby CY3359-40SMS - Full HD - Smart TV 40"</small></a></p>
+                                <div class="product-price">
+                                    <span class="product-price-normal text-decoration-line-through px-2">$ 1.000,00</span>
+                                    <span class="product-price-offer text-primary fw-bold">$ 500,00</span>
+                                </div>
+                            </small>
                         </div>
                     </div>
                 </div>
@@ -594,16 +720,26 @@
                         <div class="col-3 product-image">
                             <img src="https://placehold.co/100x100?text=Product+image" class="img-fluid" alt="">
                         </div>
-                        <div class="col-9 product-info">
-                            <span class="badge rounded-pill bg-danger">
-                                -50% <span class="visually-hidden">unread messages</span>
-                            </span>
-                            <span class="product-valoration"><span class="text-warning">****</span>*</span>
-                            <p class="product-title fw-bold my-0"><a href="#" class="link nav-link"><small>TV Led Coby CY3359-40SMS - Full HD - Smart TV 40"</small></a></p>
-                            <div class="product-price">
-                                <span class="product-price-normal text-decoration-line-through px-2">$ 1.000,00</span>
-                                <span class="product-price-offer text-primary fw-bold">$ 500,00</span>
-                            </div>
+                        <div class="col-9 product-info px-2">
+                            <small>
+                                <span class="badge rounded-pill bg-danger">
+                                    -50% <span class="visually-hidden">unread messages</span>
+                                </span>
+                                <span class="product-valoration small">
+                                        <small>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-secondary"></i>
+                                                <i class="fas fa-star text-secondary"></i>
+                                        </small>
+                                    </span>
+                                <p class="product-title fw-bold my-0"><a href="#" class="link nav-link"><small>TV Led Coby CY3359-40SMS - Full HD - Smart TV 40"</small></a></p>
+                                <div class="product-price">
+                                    <span class="product-price-normal text-decoration-line-through px-2">$ 1.000,00</span>
+                                    <span class="product-price-offer text-primary fw-bold">$ 500,00</span>
+                                </div>
+                            </small>
                         </div>
                     </div>
                 </div>
@@ -612,16 +748,26 @@
                         <div class="col-3 product-image">
                             <img src="https://placehold.co/100x100?text=Product+image" class="img-fluid" alt="">
                         </div>
-                        <div class="col-9 product-info">
-                            <span class="badge rounded-pill bg-danger">
-                                -50% <span class="visually-hidden">unread messages</span>
-                            </span>
-                            <span class="product-valoration"><span class="text-warning">****</span>*</span>
-                            <p class="product-title fw-bold my-0"><a href="#" class="link nav-link"><small>TV Led Coby CY3359-40SMS - Full HD - Smart TV 40"</small></a></p>
-                            <div class="product-price">
-                                <span class="product-price-normal text-decoration-line-through px-2">$ 1.000,00</span>
-                                <span class="product-price-offer text-primary fw-bold">$ 500,00</span>
-                            </div>
+                        <div class="col-9 product-info px-2">
+                            <small>
+                                <span class="badge rounded-pill bg-danger">
+                                    -50% <span class="visually-hidden">unread messages</span>
+                                </span>
+                                <span class="product-valoration small">
+                                        <small>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-secondary"></i>
+                                                <i class="fas fa-star text-secondary"></i>
+                                        </small>
+                                    </span>
+                                <p class="product-title fw-bold my-0"><a href="#" class="link nav-link"><small>TV Led Coby CY3359-40SMS - Full HD - Smart TV 40"</small></a></p>
+                                <div class="product-price">
+                                    <span class="product-price-normal text-decoration-line-through px-2">$ 1.000,00</span>
+                                    <span class="product-price-offer text-primary fw-bold">$ 500,00</span>
+                                </div>
+                            </small>
                         </div>
                     </div>
                 </div>
@@ -630,16 +776,26 @@
                         <div class="col-3 product-image">
                             <img src="https://placehold.co/100x100?text=Product+image" class="img-fluid" alt="">
                         </div>
-                        <div class="col-9 product-info">
-                            <span class="badge rounded-pill bg-danger">
-                                -50% <span class="visually-hidden">unread messages</span>
-                            </span>
-                            <span class="product-valoration"><span class="text-warning">****</span>*</span>
-                            <p class="product-title fw-bold my-0"><a href="#" class="link nav-link"><small>TV Led Coby CY3359-40SMS - Full HD - Smart TV 40"</small></a></p>
-                            <div class="product-price">
-                                <span class="product-price-normal text-decoration-line-through px-2">$ 1.000,00</span>
-                                <span class="product-price-offer text-primary fw-bold">$ 500,00</span>
-                            </div>
+                        <div class="col-9 product-info px-2">
+                            <small>
+                                <span class="badge rounded-pill bg-danger">
+                                    -50% <span class="visually-hidden">unread messages</span>
+                                </span>
+                                <span class="product-valoration small">
+                                        <small>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-secondary"></i>
+                                                <i class="fas fa-star text-secondary"></i>
+                                        </small>
+                                    </span>
+                                <p class="product-title fw-bold my-0"><a href="#" class="link nav-link"><small>TV Led Coby CY3359-40SMS - Full HD - Smart TV 40"</small></a></p>
+                                <div class="product-price">
+                                    <span class="product-price-normal text-decoration-line-through px-2">$ 1.000,00</span>
+                                    <span class="product-price-offer text-primary fw-bold">$ 500,00</span>
+                                </div>
+                            </small>
                         </div>
                     </div>
                 </div>
@@ -659,7 +815,7 @@
                         <form>
                             <div class="input-group input-group-lg mb-3">
                                 <input type="text" class="form-control" placeholder="Tu correo@email.com" aria-label="correo@email.com" aria-describedby="button-addon2">
-                                <button class="btn btn-outline-primary" type="button" id="button-addon2">Enviar</button>
+                                <button class="btn btn-outline-primary" type="button" id="button-addon2">Enviar <i class="fas fa-paper-plane"></i></button>
                             </div>
                         </form>
                     </div>
@@ -672,44 +828,44 @@
     <!-- footer  -->
     <footer>
         <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5 my-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5 mb-5 border-bottom">
                 <div class="col mb-3">
                     <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
                         <img src="https://placehold.co/300x50?text=Roma+Shopping" class="img-fluid" alt="Shopping">
                     </a>
-                    <p>Roma Shopping (razón social Rigstar S.A.) es una empresa familiar nacida en 1986 en Ciudad del Este. Con solo 6 empleados comenzamos con el segmento de TI y con mucho trabajo ganamos destaque en el sector mayorista.</p>
-                    <a href="#">ver más</a>
+                    <p>Roma Shopping (Rigstar S.A.) es una empresa familiar nacida en 1986 en Ciudad del Este. Con 6 empleados comenzamos con el segmento de TI y con mucho trabajo ganamos destaque en el sector mayorista.</p>
+                    <a href="#">ver más <i class="fas fa-chevron-right"></i></a>
                 </div>
 
                 <div class="col mb-3">
-                    <h5>La empresa</h5>
+                    <h5><i class="fas fa-landmark"></i> La empresa</h5>
                     <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sobre nosotros</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Ofertas</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Novedades</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contacto</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><i class="fas fa-store"></i> Sobre nosotros</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><i class="fas fa-tag"></i> Otros servicios</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><i class="fas fa-splotch"></i> Novedades</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><i class="fas fa-newspaper"></i> Blog</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><i class="fas fa-table"></i> Contacto</a></li>
                     </ul>
                 </div>
 
                 <div class="col mb-3">
                     <h5>Comuníquese</h5>
                     <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">(+595) 61 500184</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">contato@romapy.com</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Camilo Recalde Nº 2051, esq. Calle Coronel Toledo</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><i class="fas fa-phone"></i> (+595) 61 500184</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><i class="fas fa-envelope"></i> contato@romapy.com</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><i class="fas fa-map-marker-alt"></i> Camilo Recalde Nº 2051, esq. Calle Coronel Toledo</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Ciudad del Este</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Paraguay</a></li>
                     </ul>
                 </div>
 
                 <div class="col mb-3">
-                    <h5>Horario de atención</h5>
+                    <h5><i class="fas fa-clock"></i> Horario de atención</h5>
                     <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Lunes a sábado</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">07:00 hs a 16:00 hs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Las imágenes de los productos que figuran en la plataforma son para fines ilustrativos.</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Preguntas frecuentes</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><i class="fas fa-question-circle"></i> Preguntas frecuentes</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="fas fa-info-circle"></i> Las imágenes de los productos que figuran en la plataforma son para fines ilustrativos.</a></li>
                     </ul>
                 </div>
             </div>
